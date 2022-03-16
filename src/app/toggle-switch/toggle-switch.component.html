@@ -1,0 +1,12 @@
+<div class="toggle-switch" [style.width.px]="width">
+  <label class="toggle-input">
+    <input type="checkbox" [ngModel]="selected" (input)="setValue($event)">
+    <span class="toggle-handle"></span>
+    <span class="item toggle-on">
+      {{switchLabel.on}}
+    </span>
+    <span class="item toggle-off">
+      {{switchLabel.off}}
+    </span>
+  </label>
+</div>
